@@ -134,7 +134,7 @@ const Footer = () => {
         <div className="border-t border-primary/10 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-center items-center gap-4">
             <p className="text-gray-500 text-sm">
-              © {currentYear} <span className="text-primary font-semibold">Tharindu H Ranasinghe</span> • All rights reserved.
+              © {currentYear} <a href="https://tharinduhranasinghe.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:text-primary/80 transition-colors">Tharindu H Ranasinghe</a> • All rights reserved.
             </p>
             <div className="flex items-center gap-6">
               <span className="text-gray-500 text-sm">

@@ -204,42 +204,10 @@ const Home = () => {
             className="mb-6 relative"
           >
             <motion.h1 
-              className="text-5xl md:text-6xl lg:text-7xl font-normal mb-4 leading-tight text-center relative"
-              animate={{
-                textShadow: [
-                  '0 0 10px rgba(6, 182, 212, 0.5)',
-                  '0 0 20px rgba(6, 182, 212, 0.8)',
-                  '0 0 10px rgba(6, 182, 212, 0.5)'
-                ]
-              }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
+              className="text-5xl md:text-6xl lg:text-7xl font-normal mb-4 leading-tight text-center relative text-white"
+              variants={itemVariants}
             >
-              {/* Glitch layers */}
-              <span className="absolute inset-0 text-white opacity-70 blur-sm" 
-                    style={{ transform: 'translate(-2px, -2px)' }}>
-                Secure development for today's digital world
-              </span>
-              <span className="absolute inset-0 text-white opacity-70 blur-sm" 
-                    style={{ transform: 'translate(2px, 2px)' }}>
-                Secure development for today's digital world
-              </span>
-              <motion.span 
-                className="relative text-white"
-                animate={{
-                  opacity: [1, 0.95, 1]
-                }}
-                transition={{
-                  duration: 0.15,
-                  repeat: Infinity,
-                  repeatType: "reverse"
-                }}
-              >
-                Secure development for today's digital world
-              </motion.span>
+              Secure development for today's digital world
             </motion.h1>
 
             {/* Binary code decoration */}

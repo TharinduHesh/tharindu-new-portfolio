@@ -7,32 +7,32 @@ const About = () => {
       name: 'Web Development', 
       icon: FaLaptopCode,
       description: 'Creating responsive, modern websites tailored to your needs with cutting-edge technologies.',
-      gradient: 'from-purple-500 to-pink-500',
+      gradient: 'from-cyan-500 to-cyan-600',
       image: 'https://images.unsplash.com/photo-1484788984921-03950022c9ef?w=800&auto=format&fit=crop'
     },
     { 
       name: 'UI/UX Design', 
       icon: FaPalette,
       description: 'Designing user-friendly, engaging, and visually appealing interfaces that enhance user experience.',
-      gradient: 'from-red-500 to-purple-500',
+      gradient: 'from-cyan-500 to-cyan-600',
       image: 'https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=800&auto=format&fit=crop'
     },
     { 
       name: 'Cyber Security', 
       icon: FaShieldAlt,
       description: 'Protecting digital assets through advanced security practices, vulnerability assessment, and threat detection.',
-      gradient: 'from-blue-500 to-cyan-500',
+      gradient: 'from-cyan-500 to-cyan-600',
       image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&auto=format&fit=crop'
     }
   ];
 
   const strengths = [
-    { name: 'Web Development', icon: FaCode, description: 'Building fast, responsive, and scalable websites.', color: 'text-blue-500' },
-    { name: 'Creative Designs', icon: FaPalette, description: 'Designing engaging and user-friendly interfaces.', color: 'text-yellow-500' },
-    { name: 'Problem Solving', icon: FaLightbulb, description: 'Finding innovative solutions to complex challenges.', color: 'text-green-500' },
-    { name: 'Coding', icon: FaLaptopCode, description: 'Designing intuitive and user-friendly software architectures.', color: 'text-cyan-500' },
-    { name: 'Fast Learner', icon: FaRocket, description: 'Adapting to new technologies and tools with ease.', color: 'text-red-500' },
-    { name: 'Planning', icon: FaClipboardCheck, description: 'Organizing tasks efficiently to meet deadlines and goals.', color: 'text-purple-500' }
+    { name: 'Web Development', icon: FaCode, description: 'Building fast, responsive, and scalable websites.', color: 'text-cyan-400' },
+    { name: 'Creative Designs', icon: FaPalette, description: 'Designing engaging and user-friendly interfaces.', color: 'text-amber-400' },
+    { name: 'Problem Solving', icon: FaLightbulb, description: 'Finding innovative solutions to complex challenges.', color: 'text-emerald-400' },
+    { name: 'Coding', icon: FaLaptopCode, description: 'Designing intuitive and user-friendly software architectures.', color: 'text-sky-400' },
+    { name: 'Fast Learner', icon: FaRocket, description: 'Adapting to new technologies and tools with ease.', color: 'text-rose-400' },
+    { name: 'Planning', icon: FaClipboardCheck, description: 'Organizing tasks efficiently to meet deadlines and goals.', color: 'text-violet-400' }
   ];
 
   return (
