@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { FaShieldAlt, FaNetworkWired, FaCode, FaLock, FaServer, FaBug, FaGithub, FaLinkedin, FaEnvelope, FaDownload, FaPalette, FaLaptopCode, FaLightbulb, FaRocket, FaClipboardCheck } from 'react-icons/fa';
+import { FaShieldAlt, FaCode, FaLock, FaServer, FaBug, FaGithub, FaLinkedin, FaEnvelope, FaDownload, FaPalette, FaLaptopCode, FaLightbulb, FaRocket, FaClipboardCheck } from 'react-icons/fa';
+import LazyImage from './LazyImage';
 
 const About = () => {
   const skills = [
@@ -218,7 +219,7 @@ const About = () => {
                 <FaLinkedin />
               </a>
               <a 
-                href="mailto:your.email@example.com" 
+                href="mailto:tharindur477@gmail.com" 
                 className="text-gray-400 hover:text-primary transition-colors duration-300 text-2xl"
               >
                 <FaEnvelope />
@@ -248,51 +249,41 @@ const About = () => {
         >
           <h3 className="text-3xl font-bold mb-8 text-center">Education</h3>
           <div className="space-y-6 max-w-4xl mx-auto">
-            {/* BSc */}
+            {/* BSc - SLIIT */}
             <div className="bg-dark/50 backdrop-blur-sm border border-primary/20 rounded-2xl p-8">
               <div className="flex items-start gap-4">
-                <div className="bg-gradient-primary p-3 rounded-lg">
-                  <FaShieldAlt className="text-2xl text-white" />
+                <div className="bg-white p-3 rounded-lg flex-shrink-0">
+                  <img 
+                    src="/assets/images/sliit.png" 
+                    alt="SLIIT Logo" 
+                    className="w-16 h-16 object-contain"
+                  />
                 </div>
                 <div className="flex-1">
                   <h4 className="text-xl font-semibold text-primary mb-2">BSc (Hons) in Information Technology Specializing in Cyber Security</h4>
-                  <p className="text-gray-300 font-medium mb-1">Undergraduate at SLIIT University</p>
+                  <p className="text-gray-300 font-medium mb-1">SLIIT - Sri Lanka Institute of Information Technology</p>
                   <p className="text-gray-400 text-sm">2023 - Present</p>
                 </div>
               </div>
             </div>
 
-            {/* A/L */}
-           {/*<div className="bg-dark/50 backdrop-blur-sm border border-primary/20 rounded-2xl p-8">
-              <div className="flex items-start gap-4">
-                <div className="bg-gradient-primary p-3 rounded-lg">
-                  <FaShieldAlt className="text-2xl text-white" />
-                </div>
-                <div className="flex-1">
-                  <h4 className="text-xl font-semibold text-primary mb-2">G.C.E Advanced Level Examination</h4>
-                  <p className="text-gray-300 font-medium mb-1">Dharmaraja College – Kandy</p>
-                  <p className="text-gray-400 text-sm mb-3">2022</p>
-                  <p className="text-gray-400">Passed with 2C's and 1S - Maths Stream</p>
-                </div>
-              </div>
-            </div>  */}
-
-            {/* O/L */}
-            {/*
+            {/* A/L - Dharmaraja College */}
             <div className="bg-dark/50 backdrop-blur-sm border border-primary/20 rounded-2xl p-8">
               <div className="flex items-start gap-4">
-                <div className="bg-gradient-primary p-3 rounded-lg">
-                  <FaShieldAlt className="text-2xl text-white" />
+                <div className="bg-white p-3 rounded-lg flex-shrink-0">
+                  <img 
+                    src="/assets/images/dharmaraja.jpg" 
+                    alt="Dharmaraja College Logo" 
+                    className="w-16 h-16 object-contain"
+                  />
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-xl font-semibold text-primary mb-2">G.C.E Ordinary Level Examination</h4>
-                  <p className="text-gray-300 font-medium mb-1">Sri Chandananda Budhist College - Kandy</p>
-                  <p className="text-gray-400 text-sm mb-3">2019</p>
-                  <p className="text-gray-400">Passed with 6A's 2B's and 1C</p>
+                  <h4 className="text-xl font-semibold text-primary mb-2">G.C.E Advanced Level</h4>
+                  <p className="text-gray-300 font-medium mb-1">Dharmaraja College - Kandy</p>
+                  <p className="text-gray-400 text-sm"></p>
                 </div>
               </div>
             </div>
-            */}
           </div>
         </motion.div>
 
@@ -306,12 +297,16 @@ const About = () => {
           <h3 className="text-3xl font-bold mb-8 text-center">Work Experience</h3>
           <div className="bg-dark/50 backdrop-blur-sm border border-primary/20 rounded-2xl p-8 max-w-4xl mx-auto">
             <div className="flex items-start gap-4">
-              <div className="bg-gradient-primary p-3 rounded-lg">
-                <FaShieldAlt className="text-2xl text-white" />
+              <div className="bg-white p-3 rounded-lg flex-shrink-0">
+                <img 
+                  src="/assets/images/boc.png" 
+                  alt="Bank of Ceylon Logo" 
+                  className="w-16 h-16 object-contain"
+                />
               </div>
               <div className="flex-1">
                 <h4 className="text-xl font-semibold text-primary mb-2">Cyber Security Intern – Bank Of Ceylon</h4>
-                <p className="text-gray-400 text-sm mb-4">Aug 2025 – Present</p>
+                <p className="text-gray-400 text-sm mb-4">Aug 2025 – Feb 2026</p>
                 <ul className="list-disc list-inside text-gray-400 space-y-2">
                   <li>Monitored and analyzed security events using SIEM and NDR platforms as part of SOC operations.</li>
                   <li>Assisted in incident investigation, alert triage, and escalation following SOC procedures.</li>
@@ -344,7 +339,7 @@ const About = () => {
                 {/* Image */}
                 <div className="relative h-48 overflow-hidden">
                   <div className={`absolute inset-0 bg-gradient-to-br ${skill.gradient} opacity-20`}></div>
-                  <img 
+                  <LazyImage 
                     src={skill.image} 
                     alt={skill.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"

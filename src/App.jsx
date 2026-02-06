@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import PageTransition from './components/PageTransition';
 import ScrollProgress from './components/ScrollProgress';
 import LoadingScreen from './components/LoadingScreen';
+import BackToTop from './components/BackToTop';
 
 function App() {
   const [showTransition, setShowTransition] = useState(false);
@@ -25,6 +26,7 @@ function App() {
     <Router>
       <LoadingScreen />
       <ScrollProgress />
+      <BackToTop />
       <div className="relative">
         <Navbar onNavClick={handleNavClick} />
         <main>

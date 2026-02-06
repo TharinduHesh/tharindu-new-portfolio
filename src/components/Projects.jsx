@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState, useEffect } from 'react';
 import { FaGithub, FaExternalLinkAlt, FaTerminal } from 'react-icons/fa';
+import LazyImage from './LazyImage';
 
 const Projects = () => {
   const ref = useRef(null);
@@ -57,7 +58,6 @@ const Projects = () => {
       technologies: ['Python', 'Tkinter', 'Cryptography', 'Pillow'],
       image: '/assets/images/crypto.png',
       github: 'https://github.com/TharinduHesh/Crypto_toolkit',
-      demo: '#', 
       color: '#ADD8E6'
     },
     {
@@ -66,7 +66,6 @@ const Projects = () => {
       technologies: ['React.js','Node.js', 'Express.js', 'Firebase', 'JWT+MFA'],
       image: '/assets/images/web.png',
       github: 'https://github.com/TharinduHesh/Secure-Mind--DynamicBiz',
-      demo: '#',
       color: ' #FFFF00'
     },
     {
@@ -75,7 +74,6 @@ const Projects = () => {
       technologies: ['JavaScript', 'React.js', 'Node.js', 'LocalStorage', 'CSS'],
       image: '/assets/images/task.png',
       github: 'https://github.com/TharinduHesh/Todo-manager-app',
-      demo: '#',
       color: '#FF69B4'
     },
     {
@@ -301,7 +299,7 @@ const Projects = () => {
             >
               {/* Project Image */}
               <div className="relative h-48 overflow-hidden">
-                <img
+                <LazyImage
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
@@ -340,14 +338,16 @@ const Projects = () => {
                   >
                     <FaGithub /> Code
                   </a>
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-gray-400 hover:text-primary transition-colors duration-300"
-                  >
-                    <FaExternalLinkAlt /> Demo
-                  </a>
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-gray-400 hover:text-primary transition-colors duration-300"
+                    >
+                      <FaExternalLinkAlt /> Demo
+                    </a>
+                  )}
                 </div>
               </div>
 
